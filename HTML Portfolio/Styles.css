@@ -157,7 +157,7 @@ nav .right a span {
     justify-content: space-between;
     justify-content: center;
 
-    gap: 500px;
+    gap: 300px;
 }
 
 
@@ -218,6 +218,12 @@ nav .right a span {
     .hero-section .head-shot img{
         width: 350px;
     }
+
+    .featured-projects .projects .project {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
 }
 
 @media (max-width: 735px) {
@@ -267,6 +273,23 @@ nav .right a span {
 
     .hero-section .text h2 {
         font-size: 30px;
+    }
+
+    /* Featured Projects Section */
+
+    .featured-projects {
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+
+    .featured-projects .text .fa-regular {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .featured-projects .text span {
+        font-size: 30px;
+        font-weight: 600;
     }
 
     /* Skills Section */
