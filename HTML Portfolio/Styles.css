@@ -129,6 +129,9 @@ nav .right a span {
     .hero-section {
         flex-direction: column-reverse;
     }
+    .hero-section .head-shot img{
+        width: 300px;
+    }
 }
 
 @media (max-width: 600px) {
