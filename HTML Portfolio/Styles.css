@@ -17,6 +17,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 a {
@@ -412,7 +414,19 @@ footer .foot p {
 
 
 /* Fit to Screen */
-@media (max-width: 1050px){
+
+@media (max-width: 1300px) {
+    .about-me .album {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me .curve {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
     .hero-section {
         gap: 50px;
     }
@@ -447,6 +461,8 @@ footer .foot p {
     .glass-box {
         width: 400px;
     }
+
+
 }
 
 @media (max-width: 450px) {
@@ -495,6 +511,27 @@ footer .foot p {
         font-size: 30px;
     }
 
+    /* About Me */
+    .about-me .album .stack-1 {
+        padding: 0 20px;
+        margin-bottom: 0px;
+    }
+
+    .about-me .album .stack-2 {
+        padding: 0 20px;
+    }
+
+    .about-me .album .stack-1 img {
+        width: 250px;
+        height: 330px;
+        
+    }
+
+    .about-me .album .stack-2 img {
+        width: 250px;
+        height: 340px;
+        
+    }
 
     /* Featured Projects Section */
 
@@ -506,6 +543,7 @@ footer .foot p {
     .featured-projects .text .fa-regular {
         font-size: 22px;
         font-weight: 600;
+        align-items: center;
     }
     
     .featured-projects .text span {
@@ -533,6 +571,10 @@ footer .foot p {
 
     /* Contact Section */
 
+    .contact-section {
+        padding: 0 20px;
+    }
+
     .contact-section .group {
         flex-direction: column;
     }
@@ -547,6 +589,32 @@ footer .foot p {
     
 }
 
+@media (max-width: 530px) {
+    .about-me .album .stack-1 {
+        width: 380px;
+        height: 342px;
+        margin-bottom: -80px;
+    }
+
+    .about-me .album .stack-2 {
+        width: 380px;
+        height: 342px;
+        margin-bottom: 0px;
+    }
+
+    .about-me .album .stack-1 img {
+        width: 180px;
+        height: 240px;
+        
+    }
+
+    .about-me .album .stack-2 img {
+        width: 180px;
+        height: 240px;
+        
+    }
+
+}
 
 
 
