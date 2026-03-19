@@ -148,6 +148,108 @@ nav .right a span {
     
     border-radius: 20px;
     box-shadow: -5px 10px 6px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
+}
+
+/* About Me */
+
+.about-me .album {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    
+}
+
+.about-me .album .stack-1{
+    position: relative;
+    width: 500px;
+    height: 450px;
+    margin-bottom: 100px;
+}
+
+.about-me .album .stack-1 img {
+    position: absolute;
+    width: 320px;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+    
+}
+
+.about-me .album .stack-1 img:nth-child(1) {
+    transform: rotate(-10deg) translate(0px, 0px);
+    z-index: 1;
+    margin-left: 5px;
+}
+
+.about-me .album .stack-1 img:nth-child(2) {
+    transform: rotate(0deg) translate(70px, 0px);
+    z-index: 2;
+    margin-left: 5px;
+}
+
+.about-me .album .stack-1 img:nth-child(3) {
+    transform: rotate(10deg) translate(140px, 0px);
+    z-index: 3;
+}
+
+.about-me .album .stack-1 img:hover {
+    transform: scale(1.25) rotate(0deg) translateY(-10px) translateX(50px);
+    z-index: 10;
+}
+
+.about-me .album .stack-2{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin: 0 100px;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    
+}
+
+.about-me .album .stack-2 img {
+    position: absolute;
+    width: 320px;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+    
+}
+
+.about-me .album .stack-2 img:nth-child(1) {
+    transform: rotate(10deg) translate(140px, 0px);
+    z-index: 1;
+    
+}
+
+.about-me .album .stack-2 img:nth-child(2) {
+    transform: rotate(0deg) translate(70px, 0px);
+    z-index: 2;
+    
+}
+
+.about-me .album .stack-2 img:nth-child(3) {
+    transform: rotate(-10deg) translate(0px, 0px);
+    z-index: 3;
+}
+
+.about-me .album .stack-2 img:hover {
+    transform: scale(1.25) rotate(0deg) translateY(10px) translateX(80px);
+    z-index: 10;
+}
+
+.curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+
+    z-index: 2000; /* behind */
+    pointer-events: none; /* prevents blocking clicks */
 }
 
 /* Featured Projects*/
